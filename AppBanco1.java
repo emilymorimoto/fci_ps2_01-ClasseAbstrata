@@ -40,6 +40,7 @@ public class AppBanco1 {
         print("\n## Informações das contas:");
         for (int i=0; i<contas.length; i++) {
             print(contas[i].toString());
+
         }
     }
     

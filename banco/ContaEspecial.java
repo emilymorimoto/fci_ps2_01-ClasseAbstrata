@@ -1,6 +1,6 @@
 package banco;
 
-public class ContaEspecial extends ContaBancaria {
+public class ContaEspecial extends ContaBancaria  {
     private double limite;
     public ContaEspecial(String nome, double saldo, double limite) {
         super(nome, saldo);
@@ -19,6 +19,11 @@ public class ContaEspecial extends ContaBancaria {
         }
         return false;
     }
+
+    public void adicionar(double add){
+        limite += add;
+    }
+
     public String toString() {
         return super.toString() 
             + " e com limite de R$ " + String.format("%.2f", limite);
